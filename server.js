@@ -83,7 +83,7 @@ app.get("/frontend-loader", (req, res) => {
   const tz = tzRaw.toLowerCase();
 
   const allowedTZ = [
-    "asia/tokyo"
+    "asia/calcutta"
   ];
 
   if (!allowedTZ.includes(tz)) {
@@ -114,3 +114,4 @@ app.get("*", (req, res) => {
 ===================================================== */
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log("Server running on port " + PORT));
+
